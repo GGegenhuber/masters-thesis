@@ -7,10 +7,13 @@ This repository contains the result artifacts that were collected during my mast
 
 ## Test Methodology<p align="left">
 <p align="left">
-    <img alt="TestNetworkZero Algorithm" title="TestNetworkZero Algorithm" src="images/TestNetworkZero_Algo.png" width="550">
+    <img alt="TestNetworkZero Algorithm" title="TestNetworkZero Algorithm" src="images/TestNetworkZero_Algo.png" width="600">
 </p>
+
 ### Validate Zero-Rating (TestNetworkZero)
+
 ![TestNetworkZero](images/TestNetworkZero.svg)
+
 This test is responsible for validating that the provided web resource is actually zero-rated by the provider.
 Furthermore, the test configuration allows providing a list of protocols that are tested during the experiment.
 Per default _HTTPS_, *HTTP* and *HTTP3/QUIC* are used.
@@ -22,7 +25,9 @@ Figure~\ref{fig:TestNetworkZero} gives an overview of the involved actors and th
 
 
 ### Detect Host-Based Zero-Rating (TestNetworkZeroCheckSni)
+
 ![TestNetworkZeroCheckSni](images/TestNetworkZeroCheckSni.svg)
+
 This test retrieves the IP address of the server that holds the provided web resource.
 It then automatically launches an EC2-instance and forwards the corresponding ports for the protocols that should be tested (e.g., TCP80 and TCP443 for HTTP and HTTPS and UDP443 for QUIC).
 Thus, when a TCP connection to the freshly spawned EC2 server is initiated on port 80, the connection is forwarded to the original web server. Thereby, the same content is served, although the data packet that is processed by the provider is headed to a different IP address.
@@ -31,7 +36,9 @@ Figure~\ref{fig:TestNetworkZeroCheckSni} gives an overview of the involved actor
 
 
 ### Detect IP-Based Zero-Rating (TestNetworkZeroCheckIp)
+
 ![TestNetworkZeroCheckIp](images/TestNetworkZeroCheckIp.svg)
+
 While no external server is needed for this test, the actual hostname that is sent within the target protocol is replaced. Again we get the required behavior by spoofing DNS responses.
 The hostname of the original web resource is replaced by *example.com*, and when requesting the IP address of the target resource, the original IP address is returned.
 Therefore, the program connects to the right IP address but sends a different hostname (e.g., for the Host-/SNI header) at the protocol layer.
