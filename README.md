@@ -13,12 +13,12 @@ This repository contains the result artifacts that were collected during my mast
 </p>
 This test is responsible for validating that the provided web resource is actually zero-rated by the provider.
 Furthermore, the test configuration allows providing a list of protocols that are tested during the experiment.
-Per default \textit{HTTPS}, \textit{HTTP} and \textit{HTTP3/QUIC} are used.
+Per default *HTTPS*, *HTTP* and *HTTP3/QUIC* are used.
 As Algorithm~\ref{alg:testnetworkzero} shows, the list of protocols is sequentially processed with increasing payload size.
 When executing the payload for a concrete protocol, the test repeatedly requests the resource using the corresponding protocol. For repeated requests, the payload implementation ensures that the DNS query is only issued once.
 Finally, the test generates control traffic to a third party that is not part of any zero-rating program and therefore normally billed.
 As previously described, the test terminates as soon as the control traffic is recognized.
-Figure~\ref{fig:TestNetworkZero} gives an overview of the involved actors and the traffic flow when the test is executed for an application with the hostname \textit{application.com}.
+Figure~\ref{fig:TestNetworkZero} gives an overview of the involved actors and the traffic flow when the test is executed for an application with the hostname *application.com*.
 
 
 ### Detect Host-Based Zero-Rating (TestNetworkZeroCheckSni)
@@ -37,10 +37,10 @@ Figure~\ref{fig:TestNetworkZeroCheckSni} gives an overview of the involved actor
     <img alt="TestNetworkZeroCheckIp" title="TestNetworkZeroCheckIp" src="images/TestNetworkZeroCheckIp.svg" width="550">
 </p>
 While no external server is needed for this test, the actual hostname that is sent within the target protocol is replaced. Again we get the required behavior by spoofing DNS responses.
-The hostname of the original web resource is replaced by \textit{example.com}, and when requesting the IP address of the target resource, the original IP address is returned.
+The hostname of the original web resource is replaced by *example.com*, and when requesting the IP address of the target resource, the original IP address is returned.
 Therefore, the program connects to the right IP address but sends a different hostname (e.g., for the Host-/SNI header) at the protocol layer.
 Figure~\ref{fig:TestNetworkZeroCheckIp} gives an overview of the involved actors and the traffic flow during this test.
-Although the packets are sent to the real application's web server, they do not contain the actual hostname because it was previously exchanged with a dummy value (\textit{example.com}).
+Although the packets are sent to the real application's web server, they do not contain the actual hostname because it was previously exchanged with a dummy value (*example.com*).
 
 License
 ---------------------------------------
