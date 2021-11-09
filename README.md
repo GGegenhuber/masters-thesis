@@ -8,7 +8,13 @@ This repository contains the result artifacts that were collected during my mast
 </p>
 
 ### Detect Host-Based Zero-Rating (TestNetworkZeroCheckSni)
+<p align="left">
+    <img alt="TestNetworkZeroCheckSni" title="TestNetworkZeroCheckSni" src="images/TestNetworkZeroCheckSni.svg" width="550">
+</p>
 ### Detect IP-Based Zero-Rating (TestNetworkZeroCheckIp)
+<p align="left">
+    <img alt="TestNetworkZeroCheckIp" title="TestNetworkZeroCheckIp" src="images/TestNetworkZeroCheckIp.svg" width="550">
+</p>
 
 ### Related Repositories
 * [mobile-atlas](https://github.com/sbaresearch/mobile-atlas): contains the source code (including test metrics) that was used to generate the results of the thesis
