@@ -10,12 +10,14 @@ This repository contains the result artifacts that were collected during my mast
 * [mobile-atlas](https://github.com/sbaresearch/mobile-atlas): contains the source code (including test metrics) that was used to generate the results of the thesis
 * [pySIM](https://github.com/GGegenhuber/pysim): forked version of pySIM that is used within the [mobile-atlas](https://github.com/sbaresearch/mobile-atlas) repository
 
-## Test Methodology<p align="left">
+## Test Methodology
+To conduct our measurements we used the [MobileAtlas](https://mobileatlas.eu/) measurement platform.
+
+### Validate Zero-Rating (TestNetworkZero)
+
 <p align="left">
     <img alt="TestNetworkZero Algorithm" title="TestNetworkZero Algorithm" src="images/TestNetworkZero_Algo.png" width="600">
 </p>
-
-### Validate Zero-Rating (TestNetworkZero)
 
 ![TestNetworkZero](images/TestNetworkZero.svg)
 
