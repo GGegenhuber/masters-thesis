@@ -15,7 +15,7 @@ This repository contains the result artifacts that were collected during my mast
 To conduct our measurements we used the [MobileAtlas measurement platform](https://mobileatlas.eu/).
 
 For tests on differential pricing and, more specifically, zero-rating, we need to know whether specific traffic is deducted from the available credit units or funds.
-To cope with different update latency of consumed units and to enable running multiple payloads without in-between waiting for the billing records to update, we use binary exponents, i.e., every payload uses traffic amounts selected from baseunit &times; 2<sub>testid</sub>.
+To cope with different update latency of consumed units and to enable running multiple payloads without in-between waiting for the billing records to update, we use binary exponents, i.e., every payload uses traffic amounts selected from baseunit &times; 2<sup>testid</sup>.
 For example, the first payload might use 1 MB, the second 2 MB, the third 4 MB, and the fourth 8 MB.
 When the final traffic billing arrives (which in our case is a control payload that is always billed), we can unambiguously deduct which payloads were counted towards the customer's bill.
 
