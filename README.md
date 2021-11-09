@@ -1,15 +1,14 @@
 # Zero-Rating, One Big Mess: Analyzing Differential Pricing Practices of European Mobile Network Operators
 This repository contains the result artifacts that were collected during my master's thesis at TU Vienna.
 
+### Repository Content
+* README (this file): overview and brief recap of measurement methodology
+* [Thesis](Thesis.pdf): full thesis
+* [Measurement Artifacts](https://mobileatlas.eu/thesis/results.zip): packed measurement results (hosted externally because of github size constraints)
+
 ### Related Repositories
 * [mobile-atlas](https://github.com/sbaresearch/mobile-atlas): contains the source code (including test metrics) that was used to generate the results of the thesis
 * [pySIM](https://github.com/GGegenhuber/pysim): forked version of pySIM that is used within the [mobile-atlas](https://github.com/sbaresearch/mobile-atlas) repository
-
-### Full Thesis
-TODO thesis hochladen
-
-### Measurement Artifacts
-TODO link to measurement results
 
 ## Test Methodology<p align="left">
 <p align="left">
