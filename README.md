@@ -13,7 +13,7 @@ This repository contains the result artifacts that were collected during my mast
 </p>
 This test is responsible for validating that the provided web resource is actually zero-rated by the provider.
 Furthermore, the test configuration allows providing a list of protocols that are tested during the experiment.
-Per default *HTTPS*, *HTTP* and *HTTP3/QUIC* are used.
+Per default _HTTPS_, *HTTP* and *HTTP3/QUIC* are used.
 As Algorithm~\ref{alg:testnetworkzero} shows, the list of protocols is sequentially processed with increasing payload size.
 When executing the payload for a concrete protocol, the test repeatedly requests the resource using the corresponding protocol. For repeated requests, the payload implementation ensures that the DNS query is only issued once.
 Finally, the test generates control traffic to a third party that is not part of any zero-rating program and therefore normally billed.
