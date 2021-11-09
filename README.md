@@ -6,6 +6,7 @@ This repository contains the result artifacts that were collected during my mast
 * [pySIM](https://github.com/GGegenhuber/pysim): forked version of pySIM that is used within the [mobile-atlas](https://github.com/sbaresearch/mobile-atlas) repository
 
 ## Test Methodology
+
 ### Validate Zero-Rating (TestNetworkZero)
 <p align="left">
     <img alt="TestNetworkZero" title="TestNetworkZero" src="images/TestNetworkZero.svg" width="550">
@@ -15,6 +16,7 @@ This repository contains the result artifacts that were collected during my mast
 <p align="left">
     <img alt="TestNetworkZeroCheckSni" title="TestNetworkZeroCheckSni" src="images/TestNetworkZeroCheckSni.svg" width="550">
 </p>
+
 ### Detect IP-Based Zero-Rating (TestNetworkZeroCheckIp)
 <p align="left">
     <img alt="TestNetworkZeroCheckIp" title="TestNetworkZeroCheckIp" src="images/TestNetworkZeroCheckIp.svg" width="550">
