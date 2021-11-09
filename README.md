@@ -5,6 +5,12 @@ This repository contains the result artifacts that were collected during my mast
 * [mobile-atlas](https://github.com/sbaresearch/mobile-atlas): contains the source code (including test metrics) that was used to generate the results of the thesis
 * [pySIM](https://github.com/GGegenhuber/pysim): forked version of pySIM that is used within the [mobile-atlas](https://github.com/sbaresearch/mobile-atlas) repository
 
+### Full Thesis
+TODO thesis hochladen
+
+### Measurement Artifacts
+TODO link to measurement results
+
 ## Test Methodology<p align="left">
 <p align="left">
     <img alt="TestNetworkZero Algorithm" title="TestNetworkZero Algorithm" src="images/TestNetworkZero_Algo.png" width="600">
