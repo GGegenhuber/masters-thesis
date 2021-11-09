@@ -14,6 +14,18 @@ This repository contains the result artifacts that were collected during my mast
 ## Test Methodology
 To conduct our measurements we used the [MobileAtlas measurement platform](https://mobileatlas.eu/).
 
+For tests on differential pricing and, more specifically, zero-rating, we need to know whether specific traffic is deducted from the available credit units or funds.
+To cope with different update latency of consumed units and to enable running multiple payloads without in-between waiting for the billing records to update, we use binary exponents, i.e., every payload uses traffic amounts selected from baseunit &times; 2<sub>testid</sub>.
+For example, the first payload might use 1 MB, the second 2 MB, the third 4 MB, and the fourth 8 MB.
+When the final traffic billing arrives (which in our case is a control payload that is always billed), we can unambiguously deduct which payloads were counted towards the customer's bill.
+
+To reveal potential metrics that are used for classification by a certain provider, we designed three different tests.
+Because most web services nowadays are built upon HTTPS communication, our tests focus on web resources as well.
+Thereby, basically any service that uses HTTPS communication can be tested by providing an appropriate web endpoint to the test script.
+Because we also want to take a peek into the past and into the future and many web servers offer multiple protocols to serve their content anyway, MobileAtlas implements support for HTTP, HTTPS, and HTTP3/QUIC.
+
+To identify endpoints that might be of particular interest (i.e., endpoints that correspond to a zero-rated app), we usually collected a traffic dump of the target application.
+
 ### Validate Zero-Rating ([TestNetworkZero](https://github.com/sbaresearch/mobile-atlas/blob/main/mobileatlas/probe/measurement/test/test_network_zero.py#L55))
 
 <p align="left">
