@@ -1,5 +1,5 @@
 # Zero-Rating, One Big Mess: Analyzing Differential Pricing Practices of European Mobile Network Operators
-This repository contains the result artifacts that were collected during my master's thesis at TU Vienna.
+This repository contains the result artifacts that were collected during my master's thesis at [TU Vienna](https://www.tuwien.at/en/).
 
 ### Repository Content
 * README (this file): overview and brief recap of measurement methodology
