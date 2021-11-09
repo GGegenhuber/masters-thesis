@@ -3,7 +3,7 @@ This repository contains the result artifacts that were collected during my mast
 
 ### Repository Content
 * README (this file): overview and brief recap of measurement methodology
-* [Thesis](Thesis.pdf): full thesis
+* [Thesis](Thesis.pdf): final version of the master's thesis
 * [Measurement Artifacts](https://mobileatlas.eu/thesis/results.zip): packed measurement results (hosted externally because of github size constraints)
 
 ### Related Repositories
