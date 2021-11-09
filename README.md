@@ -6,8 +6,8 @@ This repository contains the result artifacts that were collected during my mast
 * [pySIM](https://github.com/GGegenhuber/pysim): forked version of pySIM that is used within the [mobile-atlas](https://github.com/sbaresearch/mobile-atlas) repository
 
 ## Test Methodology<p align="left">
-<p>
-    <img alt="TestNetworkZero Algorithm" title="TestNetworkZero Algorithm" src="images/TestNetworkZero_Algo.png" width="500">
+<p align="left">
+    <img alt="TestNetworkZero Algorithm" title="TestNetworkZero Algorithm" src="images/TestNetworkZero_Algo.png" width="550">
 </p>
 ### Validate Zero-Rating (TestNetworkZero)
 ![TestNetworkZero](images/TestNetworkZero.svg)
