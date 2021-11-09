@@ -7,6 +7,9 @@ This repository contains the result artifacts that were collected during my mast
 
 ## Test Methodology
 
+*test*
+_test_
+
 ### Validate Zero-Rating (TestNetworkZero)
 <p align="left">
     <img alt="TestNetworkZero" title="TestNetworkZero" src="images/TestNetworkZero.svg" width="550">
