@@ -10,6 +10,7 @@ This repository contains the result artifacts that were collected during my mast
 ![TestNetworkZero Algorithm](images/TestNetworkZero_Algo.png)
 
 ### Validate Zero-Rating (TestNetworkZero)
+![TestNetworkZero](images/TestNetworkZero.svg)
 <p align="left">
     <img alt="TestNetworkZero" title="TestNetworkZero" src="images/TestNetworkZero.svg" width="550">
 </p>
