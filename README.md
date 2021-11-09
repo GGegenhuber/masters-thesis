@@ -11,7 +11,7 @@ This repository contains the result artifacts that were collected during my mast
 * [pySIM](https://github.com/GGegenhuber/pysim): forked version of pySIM that is used within the [mobile-atlas](https://github.com/sbaresearch/mobile-atlas) repository
 
 ## Test Methodology
-To conduct our measurements we used the [MobileAtlas](https://mobileatlas.eu/) measurement platform.
+To conduct our measurements we used the [MobileAtlas measurement platform](https://mobileatlas.eu/).
 
 ### Validate Zero-Rating (TestNetworkZero)
 
