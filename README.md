@@ -21,3 +21,11 @@ This repository contains the result artifacts that were collected during my mast
 <p align="left">
     <img alt="TestNetworkZeroCheckIp" title="TestNetworkZeroCheckIp" src="images/TestNetworkZeroCheckIp.svg" width="550">
 </p>
+
+
+License
+---------------------------------------
+
+This work is licensed under GPLv3.
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
