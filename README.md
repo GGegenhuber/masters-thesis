@@ -7,8 +7,8 @@ This repository contains the result artifacts that were collected during my mast
 
 ## Test Methodology
 
-*test*
-_test_
+This is a *test*. Bla.
+This is a _test_. Bla
 
 ### Validate Zero-Rating (TestNetworkZero)
 <p align="left">
