@@ -26,7 +26,7 @@ Because we also want to take a peek into the past and into the future and many w
 
 To identify endpoints that might be of particular interest (i.e., endpoints that correspond to a zero-rated app), we usually collected a traffic dump of the target application.
 
-### Validate Zero-Rating ([TestNetworkZero](https://github.com/sbaresearch/mobile-atlas/blob/main/mobileatlas/probe/measurement/test/test_network_zero.py#L55))
+### Validate Zero-Rating ([TestNetworkZero](https://github.com/sbaresearch/mobile-atlas/blob/38ee0c8062b17da093f9cecd796d245245e410cf/mobileatlas/probe/measurement/test/test_network_zero_web.py#L14))
 
 <p align="left">
     <img alt="TestNetworkZero Algorithm" title="TestNetworkZero Algorithm" src="images/TestNetworkZero_Algo.png" width="600">
@@ -44,7 +44,7 @@ As previously described, the test terminates as soon as the control traffic is r
 The Figure above gives an overview of the involved actors and the traffic flow when the test is executed for an application with the hostname *application.com*.
 
 
-### Detect Host-Based Zero-Rating ([TestNetworkZeroCheckSni](https://github.com/sbaresearch/mobile-atlas/blob/main/mobileatlas/probe/measurement/test/test_network_zero.py#L88))
+### Detect Host-Based Zero-Rating ([TestNetworkZeroCheckSni](https://github.com/sbaresearch/mobile-atlas/blob/38ee0c8062b17da093f9cecd796d245245e410cf/mobileatlas/probe/measurement/test/test_network_zero_web.py#L63))
 
 ![TestNetworkZeroCheckSni](images/TestNetworkZeroCheckSni.svg)
 
@@ -55,7 +55,7 @@ When executing the payload for a certain protocol, the measurement environment p
 The Figure above gives an overview of the involved actors and the traffic flow during this test. When the data packets are passing the classifier, the hostname within the packets matches the one from the application. However, the IP address of the packets does not match the address of the application's web server because the packets are headed to the EC2 instance. Furthermore, the provider does not know about the port forwarding because this happens behind closed doors on the EC2 instance. However, the content of the data packets is equal to the previous test because the EC2 instance acts as a proxy to the actual application's web server.
 
 
-### Detect IP-Based Zero-Rating ([TestNetworkZeroCheckIp](https://github.com/sbaresearch/mobile-atlas/blob/main/mobileatlas/probe/measurement/test/test_network_zero.py#L117))
+### Detect IP-Based Zero-Rating ([TestNetworkZeroCheckIp](https://github.com/sbaresearch/mobile-atlas/blob/38ee0c8062b17da093f9cecd796d245245e410cf/mobileatlas/probe/measurement/test/test_network_zero_web.py#L92))
 
 ![TestNetworkZeroCheckIp](images/TestNetworkZeroCheckIp.svg)
 
